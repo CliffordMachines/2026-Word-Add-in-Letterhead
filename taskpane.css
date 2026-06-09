@@ -1,16 +1,33 @@
-/* v 1.0.0.01 */
+/* v 1.0.0.02 */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 15px;
     color: #333;
+    background-color: #fbfae2; /* Matches your Quote Automate theme colors */
 }
 
 .container {
     text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #0078d4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
 }
 
 .action-button {
-    background-color: #0078d4; /* Corporate Blue */
+    background-color: #0078d4;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -19,8 +36,9 @@ body {
     cursor: pointer;
     border-radius: 4px;
     margin-top: 20px;
-    transition: background-color 0.2s ease;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.15s ease;
 }
 
 .action-button:hover {
@@ -30,4 +48,27 @@ body {
 .action-button:disabled {
     background-color: #a19f9d;
     cursor: not-allowed;
+}
+
+.status-box {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    display: none;
+}
+
+.status-box.success {
+    display: block;
+    background-color: #dff6dd;
+    color: #107c41;
+    border: 1px solid #107c41;
+}
+
+.status-box.error {
+    display: block;
+    background-color: #fde7e9;
+    color: #a80000;
+    border: 1px solid #a80000;
 }
