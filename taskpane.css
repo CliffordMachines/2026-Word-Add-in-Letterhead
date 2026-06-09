@@ -1,26 +1,33 @@
 /* v 1.0.0.01 */
-html,
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    color: #333;
 }
 
-button {
-    padding: 6px 14px;
-    font-size: 13px;
+.container {
+    text-align: center;
+}
+
+.action-button {
+    background-color: #0078d4; /* Corporate Blue */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 10px;
-    border: 1px solid #A0A0A0;
-    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+    width: 100%;
 }
 
-button:hover {
-    background-color: #e5e5e5;
+.action-button:hover {
+    background-color: #106ebe;
 }
 
-b {
-    font-weight: bold;
+.action-button:disabled {
+    background-color: #a19f9d;
+    cursor: not-allowed;
 }
