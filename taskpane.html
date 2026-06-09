@@ -1,29 +1,23 @@
+<!-- v1.0.0.01 -->   
 <!DOCTYPE html>
 <html>
-<!-- v1.0.0.01 -->   
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clifford Letterhead Automate</title>
-
-    <!-- Office JavaScript API -->
+    <title>Letterhead Automate</title>
     <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
-<script src="taskpane.js"></script>
-
-    <!-- Template styles -->
-    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="taskpane.css" type="text/css" />
 </head>
-<body>
+<body class="ms-font-m">
+    <div class="container">
+        <h2>Letterhead Automate</h2>
+        <p>Click the button below to apply the official Clifford Engineering letterhead and footer to this document.</p>
+        
+        <button id="apply-letterhead-btn" class="action-button">
+            Apply Letterhead
+        </button>
+    </div>
 
-<form id="quoteForm" class="form-grid">
- 
-
-  <div class="action-row">
-    <button type="button" id="generateLh">Add Letterhead to current document</button> 
-
-  </div>
-
-</form>
+    <script type="text/javascript" src="taskpane.js"></script>
 </body>
 </html>
